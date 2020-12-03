@@ -17,7 +17,9 @@
 /***************************************************************************************************
  * BROWSER POLYFILLS
  */
-
+// https://github.com/angular/angular-cli/issues/9827#issuecomment-386154063
+// Add global to window, assigning the value of window itself.
+(window as any).global = window;
 /** IE10 and IE11 requires the following for NgClass support on SVG elements */
 // import 'classlist.js';  // Run `npm install --save classlist.js`.
 
